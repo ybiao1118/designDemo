@@ -1,0 +1,28 @@
+git init //创建一个git仓库
+git clone url //从远程仓库导入一个项目
+git diff //查看更新变化
+git rm 文件名//移除文件
+
+git log -p -3//查看历史-p查看修改内容-3三条记录
+git log --pretty=format:"%h - %an, %ar : %s"
+git commit -m 'add'//-m备注add
+git commit --amend//撤销操作
+git remote -v //查看远程仓库
+git remote add url//添加远程仓库
+git fetch url //从远程仓库抓取本地没有的数据
+git push origin master//将本地文件提交到master仓库上
+git remote show origin//查看origin仓库的信息
+
+git remote rename oldname nowname //修改远程仓库名字
+git remote rm name//删除name远程仓库
+git branch testing//创建testing分支
+git checkout testing//切换分支到testing
+git push origin testing //提交代码到testing分支上
+
+//分支合并
+git checkout master
+git merge testing//合并testing和master
+git branch -v //查看所有分支的信息
+git branch --merged //已经合并的分支
+git branch --no-merged//还没有合并的分支
+
